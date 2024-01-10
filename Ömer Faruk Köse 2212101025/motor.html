@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor Kiralama </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: black;
+        }
+
+        .navbar-toggler {
+            background-color: #17a2b8 !important;
+        }
+
+        .navstyle {
+            background-color: black;
+            color: #fff !important;
+        }
+
+        nav a {
+            color: #fff;
+        }
+
+        .main {
+            background-image: url('resimler/arkaplan.gif');
+            background-size: 100% 100%;
+            background-position: center;
+            height: 75vh;
+        }
+
+        footer {
+            background-color: black;
+            text-transform: capitalize;
+            color: white;
+        }
+
+        footer strong {
+            margin-bottom: 1.5rem !important;
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+
+        #kiralamaForm {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-expand-lg navstyle">
+        <div class="container">
+            <a class="navbar-brand " href="#"><i class="fas fa-motorcycle fa-lg"></i><span class="font-weight-bold">&nbsp;Motor Rental</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon text-info"><i class="fas fa-bars"
+                                                               style="color:#fff; font-size:28px;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Ev</a>
+                    </li>
+
+                    <a class="nav-link" href="#motorcyclesSection" data-target="#motorcyclesSection">Motorsikletler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/+905074962401">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<header class="container-fluid main pl-lg-5 d-flex align-items-center text-danger text-capitalize">
+    <div class="pl-lg-5">
+        <h1 class="ml-5 text-info font-weight-bold">Sürüş Heyecanını Keşfedin</h1>
+        <p class="ml-5 text-white">Uygun fiyatlarla size yakışan motorlar</p>
+    </div>
+</header>
+<section id="motorcyclesSection" class="container mt-5">
+    <h2 class="text-center mb-4 text-info">Motosikletlerimiz</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="resimler/1000rr.jpg" class="card-img-top" alt="1000rr">
+                <div class="card-body">
+                    <h5 class="card-title">1000rr</h5>
+                    <p class="card-text">
+                        <strong>Renk:</strong> Beyaz<br>
+                        <strong>Yıl:</strong> 2022<br>
+                        <strong>Günlük Ücret:</strong> 300 ₺<br>
+                        <strong>Açıklama:</strong> Heyecan arayanlar için yüksek performanslı spor motosiklet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="resimler/cbr600.jpg" class="card-img-top" alt="cbr600">
+                <div class="card-body">
+                    <h5 class="card-title">cbr600</h5>
+                    <p class="card-text">
+                        <strong>Renk:</strong> Kırmızı<br>
+                        <strong>Yıl:</strong> 2021<br>
+                        <strong>Günlük Ücret:</strong> 250 ₺<br>
+                        <strong>Açıklama:</strong> Şık ve güçlü sokak motosikleti.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="resimler/mt7.jpg" class="card-img-top" alt="mt7">
+                <div class="card-body">
+                    <h5 class="card-title">mt7</h5>
+                    <p class="card-text">
+                        <strong>Renk:</strong> Siyah<br>
+                        <strong>Yıl:</strong> 2023<br>
+                        <strong>Günlük Ücret:</strong> 350 ₺<br>
+                        <strong>Açıklama:</strong> Çok yönlü ve çevik macera motosikleti.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="resimler/ducati.jpg" class="card-img-top" alt="ducati">
+                <div class="card-body">
+                    <h5 class="card-title">ducati</h5>
+                    <p class="card-text">
+                        <strong>Renk:</strong> Kırmızı<br>
+                        <strong>Yıl:</strong> 2022<br>
+                        <strong>Günlük Ücret:</strong> 320 ₺<br>
+                        <strong>Açıklama:</strong> Tasarım harikası İtalyan spor motosikleti.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="resimler/ninja.png" class="card-img-top" alt="ninja">
+                <div class="card-body">
+                    <h5 class="card-title">ninja</h5>
+                    <p class="card-text">
+                        <strong>Renk:</strong> Yeşil<br>
+                        <strong>Yıl:</strong> 2021<br>
+                        <strong>Günlük Ücret:</strong> 280 ₺<br>
+                        <strong>Açıklama:</strong> Hız ve çeviklik konusunda lider spor motosiklet.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="resimler/r1.jpg" class="card-img-top" alt="r1">
+                <div class="card-body">
+                    <h5 class="card-title">r1</h5>
+                    <p class="card-text">
+                        <strong>Renk:</strong> Mavi<br>
+                        <strong>Yıl:</strong> 2023<br>
+                        <strong>Günlük Ücret:</strong> 310 ₺<br>
+                        <strong>Açıklama:</strong> Yüksek performanslı Yamaha spor motosikleti.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="resimler/r25.jpg" class="card-img-top" alt="r25">
+                <div class="card-body">
+                    <h5 class="card-title">r25</h5>
+                    <p class="card-text">
+                        <strong>Renk:</strong> Mavi<br>
+                        <strong>Yıl:</strong> 2023<br>
+                        <strong>Günlük Ücret:</strong> 200 ₺<br>
+                        <strong>Açıklama:</strong> Yüksek performanslı Yamaha Sehir içi motosikleti.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="resimler/cg.jpeg" class="card-img-top" alt="cg">
+                <div class="card-body">
+                    <h5 class="card-title">cg</h5>
+                    <p class="card-text">
+                        <strong>Renk:</strong> Ölüm Beyazı<br>
+                        <strong>Yıl:</strong> 1999<br>
+                        <strong>Günlük Ücret:</strong> 10 ₺<br>
+                        <strong>Açıklama:</strong> Kekoların Göz Bebeğii .
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="resimler/harley.jpg" class="card-img-top" alt="harley">
+                <div class="card-body">
+                    <h5 class="card-title">harley</h5>
+                    <p class="card-text">
+                        <strong>Renk:</strong> Mavi<br>
+                        <strong>Yıl:</strong> 2019<br>
+                        <strong>Günlük Ücret:</strong> 400 ₺<br>
+                        <strong>Açıklama:</strong> Ağır Abi .
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row p-3 text-center">
+            <div class="col-md-4 col-sm-12">
+                <strong class="text-info"><i class="fas fa-location"></i> Konumumuz</strong>
+                <p>Camii, Cami, 15300 Bucak/Burdur</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <strong class="text-info">Telefon</strong>
+                <p>0507 496 2401</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <strong class="text-info">Email</strong>
+                <p>koseomer332@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="kiralamaForm" style="max-width: 400px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <button id="closeBtn" style="float: right; background-color: #fff; border: none; cursor: pointer; font-size: 16px;">&times;</button> <!-- Close button -->
+    <h2 style="text-align: center; color: #333;">Kiralama Formu</h2>
+    <p style="font-weight: bold;">Motor Adı: <span id="motorAdi"></span></p>
+    <label for="kiralamaTarihi" style="display: block; margin-bottom: 8px; font-size: 14px;">Kiralama Tarihi:</label>
+    <input type="date" id="kiralamaTarihi" required style="width: 100%; padding: 8px; margin-bottom: 16px; border: 1px solid #ccc; border-radius: 4px;">
+    <label for="iadeTarihi" style="display: block; margin-bottom: 8px; font-size: 14px;">İade Tarihi:</label>
+    <input type="date" id="iadeTarihi" required style="width: 100%; padding: 8px; margin-bottom: 16px; border: 1px solid #ccc; border-radius: 4px;">
+    <label for="kacKm" style="display: block; margin-bottom: 8px; font-size: 14px;">Kaç Kilometre Kiralanacak:</label>
+    <input type="number" id="kacKm" required style="width: 100%; padding: 8px; margin-bottom: 16px; border: 1px solid #ccc; border-radius: 4px;">
+    <button type="submit" id="submitBtn" style="background-color: #4CAF50; color: #fff; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Kiralama Fiyat Bilgisi Al</button>
+    <p id="fiyat" style="font-size: 16px; margin-top: 16px;">Toplam Kiralama Fiyatı:₺ </p>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var motorImages = document.querySelectorAll(".card-img-top");
+        var kiralamaForm = document.getElementById("kiralamaForm");
+        var submitButton = document.getElementById("submitBtn");
+        var closeButton = document.getElementById("closeBtn");
+        var selectedMotor;
+
+        motorImages.forEach(function (img) {
+            img.addEventListener("click", function () {
+                kiralamaForm.style.display = "block";
+                document.getElementById("motorAdi").innerText = img.alt;
+                selectedMotor = img.alt;
+                document.getElementById("selectedMotor").value = selectedMotor;
+            });
+        });
+
+        submitButton.addEventListener("click", function () {
+            var dailyPrice;
+            switch (selectedMotor) {
+                case "1000rr":
+                    dailyPrice = 300;
+                    break;
+                case "cbr600":
+                    dailyPrice = 250;
+                    break;
+                case "mt7":
+                    dailyPrice = 350;
+                    break;
+                case "ducati":
+                    dailyPrice = 320;
+                    break;
+                case "ninja":
+                    dailyPrice = 280;
+                    break;
+                case "r1":
+                    dailyPrice = 310;
+                    break;
+                case "r25":
+                    dailyPrice = 200;
+                    break;
+                case "cg":
+                    dailyPrice = 10;
+                    break;
+                case "harley":
+                    dailyPrice = 400;
+                    break;
+                default:
+                    dailyPrice = 0;
+                    break;
+            }
+
+            var kiralamaTarihi = new Date(document.getElementById("kiralamaTarihi").value);
+            var iadeTarihi = new Date(document.getElementById("iadeTarihi").value);
+            var kacKm = document.getElementById("kacKm").value;
+
+            var gunFarki = Math.ceil((iadeTarihi - kiralamaTarihi) / (1000 * 60 * 60 * 24));
+            var kiralamaFiyati = dailyPrice * gunFarki * 1/10 * kacKm;
+
+            document.getElementById("fiyat").innerText = "Toplam Kiralama Fiyatı: " + kiralamaFiyati.toFixed(2) + "₺\nKiralamak için lütfen iletişime geçiniz";
+
+        });
+
+        closeButton.addEventListener("click", function () {
+            kiralamaForm.style.display = "none";
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        var pricesLink = document.querySelector('a[href="#motorcyclesSection"]');
+        var motorcyclesSection = document.getElementById('motorcyclesSection');
+
+        pricesLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            motorcyclesSection.scrollIntoView({behavior: 'smooth'});
+        });
+    });
+</script>
+</body>
+</html>
