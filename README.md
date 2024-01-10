@@ -28,8 +28,9 @@ Motor Kiralama web sitesi, kullanıcılarına şık bir arayüzle çeşitli moto
 ## Ekran Görüntüsü Ve Video
 
 
+https://github.com/rose-omer/omer-faruk-Kose-2212101025/assets/117285777/2d473c67-b9eb-4775-8d2a-31f0287faf0e
 
-https://github.com/rose-omer/omer-faruk-Kose-2212101025/assets/117285777/c4ea65c3-aa56-4485-a309-13015e406ce4
+
 ![asdasdasd](https://github.com/rose-omer/omer-faruk-Kose-2212101025/assets/117285777/0ccf453b-2221-425f-9a6b-9d18211eed1b)
 ![ads](https://github.com/rose-omer/omer-faruk-Kose-2212101025/assets/117285777/b14add20-522b-4ac0-b420-44ffa0afda64)
 
